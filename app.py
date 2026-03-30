@@ -426,7 +426,7 @@ elif page == "📊 Data Explorer":
 
         fig, ax = plt.subplots(figsize=(10, 7))
         fig.patch.set_facecolor('#0f1628')
-        ax.set_facecolor('#335abd')
+        ax.set_facecolor('#0f1628')
         sns.heatmap(
             corr, annot=True, fmt=".2f", ax=ax,
             cmap=sns.diverging_palette(220, 20, as_cmap=True),
@@ -467,7 +467,7 @@ elif page == "📊 Data Explorer":
             hover_name="Country",
             size="Daily Oil Consumption (Barrels)",
             color="Price Per Liter (USD)",
-            color_continuous_scale=["#1e3a5f", "#ca8a04"],
+            color_continuous_scale=["#3986eb", "#ca8a04"],
             template="plotly_dark",
             size_max=40
         )
@@ -492,7 +492,7 @@ elif page == "📊 Data Explorer":
         fig5 = px.box(
             df_copy, x="Consumption Tier", y="Price Per Liter (USD)",
             color="Consumption Tier",
-            color_discrete_map={"Low": "#1e3a5f", "Medium": "#ca8a04", "High": "#fbbf24"},
+            color_discrete_map={"Low": "#ecc570", "Medium": "#ca8a04", "High": "#fbbf24"},
             template="plotly_dark"
         )
         fig5.update_layout(
