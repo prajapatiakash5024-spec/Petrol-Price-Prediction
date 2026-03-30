@@ -219,7 +219,7 @@ st.markdown("""
 # ─── Load & Prepare Data ─────────────────────────────────────────────────────
 @st.cache_data
 def load_and_train():
-    df = pd.read_excel("Petrol Dataset June 23 2022 -- Version 2.csv.xlsx")
+    df = pd.read_excel("petrol_data.xlsx.xlsx")
     df.columns = df.columns.str.strip()
     df = df.fillna(df.mean(numeric_only=True))
 
