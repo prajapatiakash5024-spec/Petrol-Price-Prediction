@@ -426,7 +426,7 @@ elif page == "📊 Data Explorer":
 
         fig, ax = plt.subplots(figsize=(10, 7))
         fig.patch.set_facecolor('#0f1628')
-        ax.set_facecolor('#0f1628')
+        ax.set_facecolor('#335abd')
         sns.heatmap(
             corr, annot=True, fmt=".2f", ax=ax,
             cmap=sns.diverging_palette(220, 20, as_cmap=True),
