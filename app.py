@@ -490,7 +490,7 @@ elif page == "📊 Data Explorer":
         fig5 = px.box(
             df_copy, x="Consumption Tier", y="Price Per Liter (USD)",
             color="Consumption Tier",
-            color_discrete_map={"Low": "#1e3a5f", "Medium": "#58a6ff", "High": "#58a6ff"},
+            color_discrete_map={"Low": "#509afc", "Medium": "#58a6ff", "High": "#58a6ff"},
             template="plotly_dark"
         )
         fig5.update_layout(
