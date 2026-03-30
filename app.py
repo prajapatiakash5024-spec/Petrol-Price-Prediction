@@ -451,7 +451,7 @@ elif page == "📊 Data Explorer":
             plot_bgcolor="rgba(15,22,40,0.8)",
             font_color="#94a3b8",
             coloraxis_showscale=False,
-            xaxis=dict(gridcolor="#30363d", title="Correlation Coefficient"),
+            xaxis=dict(gridcolor="#8ad4f1", title="Correlation Coefficient"),
             yaxis=dict(gridcolor="rgba(0,0,0,0)"),
             margin=dict(l=0, r=0, t=10, b=0),
             height=320
@@ -465,7 +465,7 @@ elif page == "📊 Data Explorer":
             hover_name="Country",
             size="Daily Oil Consumption (Barrels)",
             color="Price Per Liter (USD)",
-            color_continuous_scale=["#1e3a5f", "#58a6ff"],
+            color_continuous_scale=["#398bf7", "#58a6ff"],
             template="plotly_dark",
             size_max=40
         )
