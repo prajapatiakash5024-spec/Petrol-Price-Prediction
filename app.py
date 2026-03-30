@@ -30,14 +30,14 @@ st.markdown("""
 
     /* Dark background */
     .stApp {
-        background: #0a0e1a;
-        color: #e2e8f0;
+        background: #0d1117;
+        color: #e6edf3;
     }
 
     /* Sidebar */
     [data-testid="stSidebar"] {
-        background: #0f1628 !important;
-        border-right: 1px solid #1e2d4a;
+        background: #161b22 !important;
+        border-right: 1px solid #30363d;
     }
 
     /* Hero header */
@@ -45,17 +45,15 @@ st.markdown("""
         font-family: 'Syne', sans-serif;
         font-size: 3.4rem;
         font-weight: 900;
-        color: #00ffff;
-        text-shadow: 0 0 30px rgba(4, 255, 255, 0.5), 0 2px 8px rgba(0,0,0,0.5);
+        color: #e6edf3;
         line-height: 1.1;
         letter-spacing: -1px;
         margin-bottom: 0.3rem;
-        -webkit-text-fill-color: #00ffff;
     }
 
     .hero-subtitle {
         font-size: 1.05rem;
-        color: #64748b;
+        color: #8b949e;
         font-weight: 300;
         letter-spacing: 0.5px;
         margin-bottom: 2rem;
@@ -63,8 +61,8 @@ st.markdown("""
 
     /* Metric cards */
     .metric-card {
-        background: linear-gradient(135deg, #111827 0%, #1a2234 100%);
-        border: 1px solid #1e2d4a;
+        background: linear-gradient(135deg, #21262d 0%, #161b22 100%);
+        border: 1px solid #30363d;
         border-radius: 16px;
         padding: 1.5rem;
         text-align: center;
@@ -73,19 +71,19 @@ st.markdown("""
 
     .metric-card:hover {
         transform: translateY(-2px);
-        border-color: #04ffffef;
+        border-color: #388bfd;
     }
 
     .metric-value {
         font-family: 'Syne', sans-serif;
         font-size: 2.2rem;
         font-weight: 700;
-        color: #04ffffef;
+        color: #58a6ff;
     }
 
     .metric-label {
         font-size: 0.78rem;
-        color: #64748b;
+        color: #8b949e;
         text-transform: uppercase;
         letter-spacing: 1.5px;
         margin-top: 0.3rem;
@@ -96,34 +94,34 @@ st.markdown("""
         font-family: 'Syne', sans-serif;
         font-size: 1.5rem;
         font-weight: 900;
-        color: #00ffff;
-        border-left: 5px solid #04efef;
+        color: #58a6ff;
+        border-left: 5px solid #58a6ff;
         padding-left: 1rem;
         margin: 2rem 0 1rem 0;
-        text-shadow: 0 0 20px rgba(4, 255, 255, 0.4);
+        text-shadow: 0 0 20px rgba(88, 166, 255, 0.4);
         letter-spacing: -0.3px;
     }
 
     /* Prediction result box */
     .prediction-box {
-        background: linear-gradient(135deg, #001515 0%, #001a1a 100%);
-        border: 2px solid #04ffffef;
+        background: linear-gradient(135deg, #0d1117 0%, #0d1117 100%);
+        border: 2px solid #58a6ff;
         border-radius: 20px;
         padding: 2rem;
         text-align: center;
-        box-shadow: 0 0 40px rgba(4, 255, 255, 0.15);
+        box-shadow: 0 0 40px rgba(88, 166, 255, 0.15);
     }
 
     .prediction-value {
         font-family: 'Syne', sans-serif;
         font-size: 3.5rem;
         font-weight: 800;
-        color: #04ffffef;
+        color: #58a6ff;
     }
 
     .prediction-label {
         font-size: 0.9rem;
-        color: #94a3b8;
+        color: #8b949e;
         text-transform: uppercase;
         letter-spacing: 2px;
     }
@@ -131,9 +129,9 @@ st.markdown("""
     /* Info badge */
     .badge {
         display: inline-block;
-        background: rgba(4, 255, 255, 0.15);
-        border: 1px solid rgba(4, 255, 255, 0.4);
-        color: #04efef;
+        background: rgba(88, 166, 255, 0.15);
+        border: 1px solid rgba(88, 166, 255, 0.4);
+        color: #58a6ff;
         border-radius: 30px;
         padding: 0.3rem 1rem;
         font-size: 0.78rem;
@@ -144,36 +142,36 @@ st.markdown("""
     /* Divider */
     .custom-divider {
         height: 1px;
-        background: linear-gradient(90deg, transparent, #1e2d4a, transparent);
+        background: linear-gradient(90deg, transparent, #30363d, transparent);
         margin: 2rem 0;
     }
 
     /* Tab styling */
     .stTabs [data-baseweb="tab-list"] {
         gap: 8px;
-        background: #0f1628;
+        background: #161b22;
         border-radius: 12px;
         padding: 4px;
     }
     .stTabs [data-baseweb="tab"] {
-        color: #64748b;
+        color: #8b949e;
         font-family: 'Inter', sans-serif;
         font-weight: 500;
         border-radius: 8px;
     }
     .stTabs [aria-selected="true"] {
-        background: #04ffffef !important;
+        background: #1f6feb !important;
         color: white !important;
     }
 
     /* Slider */
     .stSlider [data-testid="stThumbValue"] {
-        color: #04ffffef;
+        color: #58a6ff;
     }
 
     /* Button */
     .stButton > button {
-        background: linear-gradient(135deg, #04ffffef 0%, #00cccc 100%);
+        background: linear-gradient(135deg, #1f6feb 0%, #388bfd 100%);
         color: white;
         border: none;
         border-radius: 10px;
@@ -187,7 +185,7 @@ st.markdown("""
     }
     .stButton > button:hover {
         transform: translateY(-1px);
-        box-shadow: 0 8px 25px rgba(4, 255, 255, 0.4);
+        box-shadow: 0 8px 25px rgba(88, 166, 255, 0.4);
     }
 
     /* DataFrame */
@@ -198,10 +196,10 @@ st.markdown("""
 
     /* Selectbox */
     .stSelectbox > div > div {
-        background: #111827;
-        border: 1px solid #1e2d4a;
+        background: #21262d;
+        border: 1px solid #30363d;
         border-radius: 10px;
-        color: #e2e8f0;
+        color: #e6edf3;
     }
 
     /* Success/info boxes */
@@ -211,9 +209,9 @@ st.markdown("""
 
     /* Scrollbar */
     ::-webkit-scrollbar { width: 6px; }
-    ::-webkit-scrollbar-track { background: #0a0e1a; }
-    ::-webkit-scrollbar-thumb { background: #1e2d4a; border-radius: 3px; }
-    ::-webkit-scrollbar-thumb:hover { background: #04ffffef; }
+    ::-webkit-scrollbar-track { background: #0d1117; }
+    ::-webkit-scrollbar-thumb { background: #30363d; border-radius: 3px; }
+    ::-webkit-scrollbar-thumb:hover { background: #58a6ff; }
 </style>
 """, unsafe_allow_html=True)
 
@@ -254,7 +252,7 @@ with st.sidebar:
     st.markdown("""
     <div style='text-align:center; padding: 1rem 0 1.5rem 0;'>
         <div style='font-size:2.5rem; margin-bottom:0.5rem;'>⛽</div>
-        <div style='font-family: Syne, sans-serif; font-weight:700; font-size:1.1rem; color:#04ffffef;'>PetrolIQ</div>
+        <div style='font-family: Syne, sans-serif; font-weight:700; font-size:1.1rem; color:#58a6ff;'>PetrolIQ</div>
         <div style='font-size:0.72rem; color:#475569; text-transform:uppercase; letter-spacing:2px;'>ML Price Predictor</div>
     </div>
     """, unsafe_allow_html=True)
@@ -270,7 +268,7 @@ with st.sidebar:
 
     st.markdown("---")
     st.markdown(f"""
-    <div style='background:#111827; border:1px solid #1e2d4a; border-radius:12px; padding:1rem;'>
+    <div style='background:#21262d; border:1px solid #30363d; border-radius:12px; padding:1rem;'>
         <p style='font-size:0.72rem; color:#64748b; text-transform:uppercase; letter-spacing:1px; margin-bottom:0.5rem;'>Dataset Info</p>
         <p style='color:#e2e8f0; font-size:0.85rem; margin:0.2rem 0;'>📋 <b>{df.shape[0]}</b> countries</p>
         <p style='color:#e2e8f0; font-size:0.85rem; margin:0.2rem 0;'>📌 <b>{df.shape[1]}</b> features</p>
@@ -295,7 +293,7 @@ with st.sidebar:
 if page == "🏠 Overview":
     st.markdown("""
     <div>
-        <div class='hero-title'>Petrol Price<br>Intelligence</div>
+        <div class='hero-title'>Petrol Price<br><span style='color:#58a6ff;'>Intelligence</span></div>
         <div class='hero-subtitle'>Machine Learning–Powered Global Fuel Price Analysis & Prediction</div>
     </div>
     """, unsafe_allow_html=True)
@@ -309,17 +307,17 @@ if page == "🏠 Overview":
         </div>""", unsafe_allow_html=True)
     with col2:
         st.markdown(f"""<div class='metric-card'>
-            <div class='metric-value'>${df['Price Per Liter (USD)'].mean():.2f}</div>
+            <div class='metric-value' style='color:#3fb950;'>${df['Price Per Liter (USD)'].mean():.2f}</div>
             <div class='metric-label'>Avg Price / Liter</div>
         </div>""", unsafe_allow_html=True)
     with col3:
         st.markdown(f"""<div class='metric-card'>
-            <div class='metric-value'>${df['Price Per Liter (USD)'].max():.2f}</div>
+            <div class='metric-value' style='color:#f78166;'>${df['Price Per Liter (USD)'].max():.2f}</div>
             <div class='metric-label'>Highest Price</div>
         </div>""", unsafe_allow_html=True)
     with col4:
         st.markdown(f"""<div class='metric-card'>
-            <div class='metric-value'>{metrics['r2']}</div>
+            <div class='metric-value' style='color:#bc8cff;'>{metrics['r2']}</div>
             <div class='metric-label'>R² Score</div>
         </div>""", unsafe_allow_html=True)
 
@@ -331,7 +329,7 @@ if page == "🏠 Overview":
         st.markdown("<div class='section-header'>Global Petrol Price Distribution</div>", unsafe_allow_html=True)
         fig = px.histogram(
             df, x="Price Per Liter (USD)", nbins=30,
-            color_discrete_sequence=["#04ffffef"],
+            color_discrete_sequence=["#58a6ff"],
             template="plotly_dark"
         )
         fig.update_layout(
@@ -339,8 +337,8 @@ if page == "🏠 Overview":
             plot_bgcolor="rgba(15,22,40,0.8)",
             font_color="#94a3b8",
             bargap=0.05,
-            xaxis=dict(gridcolor="#1e2d4a"),
-            yaxis=dict(gridcolor="#1e2d4a"),
+            xaxis=dict(gridcolor="#30363d"),
+            yaxis=dict(gridcolor="#30363d"),
             margin=dict(l=0, r=0, t=10, b=0),
             height=320
         )
@@ -350,9 +348,9 @@ if page == "🏠 Overview":
         st.markdown("<div class='section-header'>Project Context</div>", unsafe_allow_html=True)
         st.markdown("""
         <div style='color:#94a3b8; font-size:0.9rem; line-height:1.8;'>
-        Fuel prices are shaped by <b style='color:#04efef;'>geopolitical events</b>, crude oil supply, 
-        and economic indicators. This project leverages <b style='color:#04efef;'>Linear Regression</b> 
-        to model global petrol price patterns across <b style='color:#04efef;'>181 countries</b> 
+        Fuel prices are shaped by <b style='color:#58a6ff;'>geopolitical events</b>, crude oil supply, 
+        and economic indicators. This project leverages <b style='color:#58a6ff;'>Linear Regression</b> 
+        to model global petrol price patterns across <b style='color:#58a6ff;'>181 countries</b> 
         using June 2022 data — a period of significant market volatility due to the 
         Russia–Ukraine conflict and global supply chain disruptions.
         </div>
@@ -373,7 +371,7 @@ if page == "🏠 Overview":
         top15, x="Price Per Liter (USD)", y="Country",
         orientation='h',
         color="Price Per Liter (USD)",
-        color_continuous_scale=["#1e3a5f", "#04ffffef"],
+        color_continuous_scale=["#1e3a5f", "#58a6ff"],
         template="plotly_dark",
         hover_data=["GDP Per Capita ( USD )"]
     )
@@ -381,8 +379,8 @@ if page == "🏠 Overview":
         paper_bgcolor="rgba(0,0,0,0)",
         plot_bgcolor="rgba(15,22,40,0.8)",
         font_color="#94a3b8",
-        xaxis=dict(gridcolor="#1e2d4a"),
-        yaxis=dict(gridcolor="#1e2d4a"),
+        xaxis=dict(gridcolor="#30363d"),
+        yaxis=dict(gridcolor="#30363d"),
         coloraxis_showscale=False,
         margin=dict(l=0, r=0, t=10, b=0),
         height=400
@@ -394,7 +392,7 @@ if page == "🏠 Overview":
 #  PAGE 2: DATA EXPLORER
 # ══════════════════════════════════════════════
 elif page == "📊 Data Explorer":
-    st.markdown("<div class='hero-title' style='font-size:2rem;'>Data Explorer</div>", unsafe_allow_html=True)
+    st.markdown("<div class='hero-title' style='font-size:2rem; color:#e6edf3;'>Data <span style='color:#58a6ff;'>Explorer</span></div>", unsafe_allow_html=True)
     st.markdown("<div class='hero-subtitle'>Explore and visualize the petrol dataset</div>", unsafe_allow_html=True)
 
     tab1, tab2, tab3 = st.tabs(["📋 Raw Data", "📈 Correlations", "🌍 Country Insights"])
@@ -425,15 +423,15 @@ elif page == "📊 Data Explorer":
         corr = numeric_df.corr()
 
         fig, ax = plt.subplots(figsize=(10, 7))
-        fig.patch.set_facecolor('#0f1628')
-        ax.set_facecolor('#0f1628')
+        fig.patch.set_facecolor('#161b22')
+        ax.set_facecolor('#161b22')
         sns.heatmap(
             corr, annot=True, fmt=".2f", ax=ax,
             cmap=sns.diverging_palette(220, 20, as_cmap=True),
-            linewidths=0.5, linecolor='#0a0e1a',
+            linewidths=0.5, linecolor='#0d1117',
             annot_kws={"size": 8, "color": "white"}
         )
-        ax.tick_params(colors='#94a3b8', labelsize=8)
+        ax.tick_params(colors='#8b949e', labelsize=8)
         plt.xticks(rotation=45, ha='right')
         plt.tight_layout()
         st.pyplot(fig)
@@ -445,7 +443,7 @@ elif page == "📊 Data Explorer":
             x=corr_target.values, y=corr_target.index,
             orientation='h',
             color=corr_target.values,
-            color_continuous_scale=["#ef4444", "#1e2d4a", "#04ffffef"],
+            color_continuous_scale=["#ef4444", "#30363d", "#58a6ff"],
             template="plotly_dark"
         )
         fig3.update_layout(
@@ -453,7 +451,7 @@ elif page == "📊 Data Explorer":
             plot_bgcolor="rgba(15,22,40,0.8)",
             font_color="#94a3b8",
             coloraxis_showscale=False,
-            xaxis=dict(gridcolor="#1e2d4a", title="Correlation Coefficient"),
+            xaxis=dict(gridcolor="#30363d", title="Correlation Coefficient"),
             yaxis=dict(gridcolor="rgba(0,0,0,0)"),
             margin=dict(l=0, r=0, t=10, b=0),
             height=320
@@ -467,7 +465,7 @@ elif page == "📊 Data Explorer":
             hover_name="Country",
             size="Daily Oil Consumption (Barrels)",
             color="Price Per Liter (USD)",
-            color_continuous_scale=["#1e3a5f", "#04ffffef"],
+            color_continuous_scale=["#1e3a5f", "#58a6ff"],
             template="plotly_dark",
             size_max=40
         )
@@ -475,8 +473,8 @@ elif page == "📊 Data Explorer":
             paper_bgcolor="rgba(0,0,0,0)",
             plot_bgcolor="rgba(15,22,40,0.8)",
             font_color="#94a3b8",
-            xaxis=dict(gridcolor="#1e2d4a"),
-            yaxis=dict(gridcolor="#1e2d4a"),
+            xaxis=dict(gridcolor="#30363d"),
+            yaxis=dict(gridcolor="#30363d"),
             coloraxis_showscale=False,
             margin=dict(l=0, r=0, t=10, b=0),
             height=400
@@ -492,7 +490,7 @@ elif page == "📊 Data Explorer":
         fig5 = px.box(
             df_copy, x="Consumption Tier", y="Price Per Liter (USD)",
             color="Consumption Tier",
-            color_discrete_map={"Low": "#1e3a5f", "Medium": "#04ffffef", "High": "#00ffff"},
+            color_discrete_map={"Low": "#1e3a5f", "Medium": "#58a6ff", "High": "#58a6ff"},
             template="plotly_dark"
         )
         fig5.update_layout(
@@ -500,8 +498,8 @@ elif page == "📊 Data Explorer":
             plot_bgcolor="rgba(15,22,40,0.8)",
             font_color="#94a3b8",
             showlegend=False,
-            xaxis=dict(gridcolor="#1e2d4a"),
-            yaxis=dict(gridcolor="#1e2d4a"),
+            xaxis=dict(gridcolor="#30363d"),
+            yaxis=dict(gridcolor="#30363d"),
             margin=dict(l=0, r=0, t=10, b=0),
             height=320
         )
@@ -512,7 +510,7 @@ elif page == "📊 Data Explorer":
 #  PAGE 3: MODEL & METRICS
 # ══════════════════════════════════════════════
 elif page == "🤖 Model & Metrics":
-    st.markdown("<div class='hero-title' style='font-size:2rem;'>Model Performance</div>", unsafe_allow_html=True)
+    st.markdown("<div class='hero-title' style='font-size:2rem; color:#e6edf3;'>Model <span style='color:#3fb950;'>Performance</span></div>", unsafe_allow_html=True)
     st.markdown("<div class='hero-subtitle'>Linear Regression — Training & Evaluation Results</div>", unsafe_allow_html=True)
 
     # Metrics
@@ -541,7 +539,7 @@ elif page == "🤖 Model & Metrics":
         fig.add_trace(go.Scatter(
             x=y_test.values, y=y_pred,
             mode='markers',
-            marker=dict(color='#04ffffef', size=7, opacity=0.7, line=dict(color='#04efef', width=1)),
+            marker=dict(color='#58a6ff', size=7, opacity=0.7, line=dict(color='#388bfd', width=1)),
             name='Predictions'
         ))
         # Perfect prediction line
@@ -549,7 +547,7 @@ elif page == "🤖 Model & Metrics":
         fig.add_trace(go.Scatter(
             x=[mn, mx], y=[mn, mx],
             mode='lines',
-            line=dict(color='#64748b', dash='dash', width=1.5),
+            line=dict(color='#8b949e', dash='dash', width=1.5),
             name='Perfect Fit'
         ))
         fig.update_layout(
@@ -557,8 +555,8 @@ elif page == "🤖 Model & Metrics":
             paper_bgcolor="rgba(0,0,0,0)",
             plot_bgcolor="rgba(15,22,40,0.8)",
             font_color="#94a3b8",
-            xaxis=dict(title="Actual Price (USD)", gridcolor="#1e2d4a"),
-            yaxis=dict(title="Predicted Price (USD)", gridcolor="#1e2d4a"),
+            xaxis=dict(title="Actual Price (USD)", gridcolor="#30363d"),
+            yaxis=dict(title="Predicted Price (USD)", gridcolor="#30363d"),
             legend=dict(bgcolor="rgba(0,0,0,0)"),
             margin=dict(l=0, r=0, t=10, b=0),
             height=350
@@ -571,7 +569,7 @@ elif page == "🤖 Model & Metrics":
         fig2 = go.Figure()
         fig2.add_trace(go.Histogram(
             x=residuals, nbinsx=25,
-            marker_color='#04ffffef', opacity=0.8,
+            marker_color='#3fb950', opacity=0.8,
             name='Residuals'
         ))
         fig2.add_vline(x=0, line_color="#64748b", line_dash="dash", line_width=1.5)
@@ -580,8 +578,8 @@ elif page == "🤖 Model & Metrics":
             paper_bgcolor="rgba(0,0,0,0)",
             plot_bgcolor="rgba(15,22,40,0.8)",
             font_color="#94a3b8",
-            xaxis=dict(title="Residual (Actual − Predicted)", gridcolor="#1e2d4a"),
-            yaxis=dict(title="Count", gridcolor="#1e2d4a"),
+            xaxis=dict(title="Residual (Actual − Predicted)", gridcolor="#30363d"),
+            yaxis=dict(title="Count", gridcolor="#30363d"),
             margin=dict(l=0, r=0, t=10, b=0),
             height=350
         )
@@ -600,7 +598,7 @@ elif page == "🤖 Model & Metrics":
         x="Coefficient", y="Feature",
         orientation='h',
         color="Coefficient",
-        color_continuous_scale=["#ef4444", "#1e2d4a", "#04ffffef"],
+        color_continuous_scale=["#ef4444", "#30363d", "#58a6ff"],
         template="plotly_dark"
     )
     fig3.update_layout(
@@ -608,7 +606,7 @@ elif page == "🤖 Model & Metrics":
         plot_bgcolor="rgba(15,22,40,0.8)",
         font_color="#94a3b8",
         coloraxis_showscale=False,
-        xaxis=dict(gridcolor="#1e2d4a"),
+        xaxis=dict(gridcolor="#30363d"),
         yaxis=dict(gridcolor="rgba(0,0,0,0)"),
         margin=dict(l=0, r=0, t=10, b=0),
         height=350
@@ -639,7 +637,7 @@ elif page == "🤖 Model & Metrics":
 #  PAGE 4: LIVE PREDICTOR
 # ══════════════════════════════════════════════
 elif page == "🔮 Live Predictor":
-    st.markdown("<div class='hero-title' style='font-size:2rem;'>Live Predictor</div>", unsafe_allow_html=True)
+    st.markdown("<div class='hero-title' style='font-size:2rem; color:#e6edf3;'>Live <span style='color:#bc8cff;'>Predictor</span></div>", unsafe_allow_html=True)
     st.markdown("<div class='hero-subtitle'>Adjust the parameters below to predict petrol price per liter (USD)</div>", unsafe_allow_html=True)
 
     col_form, col_result = st.columns([3, 2], gap="large")
@@ -751,7 +749,7 @@ elif page == "🔮 Live Predictor":
                     <div class='metric-label'>Global Average</div>
                 </div>""", unsafe_allow_html=True)
             with col_b:
-                color = "#04ffffef" if diff >= 0 else "#04efef"
+                color = "#58a6ff" if diff >= 0 else "#58a6ff"
                 arrow = "▲" if diff >= 0 else "▼"
                 st.markdown(f"""<div class='metric-card'>
                     <div class='metric-value' style='font-size:1.5rem; color:{color};'>{arrow} {abs(diff_pct):.1f}%</div>
@@ -762,19 +760,19 @@ elif page == "🔮 Live Predictor":
             fig_gauge = go.Figure(go.Indicator(
                 mode="gauge+number",
                 value=prediction,
-                number=dict(prefix="$", font=dict(color="#04ffffef", size=28)),
+                number=dict(prefix="$", font=dict(color="#58a6ff", size=28)),
                 gauge=dict(
                     axis=dict(range=[0, df["Price Per Liter (USD)"].max()],
                               tickcolor="#64748b", tickfont=dict(color="#64748b")),
-                    bar=dict(color="#04ffffef"),
-                    bgcolor="#0f1628",
-                    borderwidth=1, bordercolor="#1e2d4a",
+                    bar=dict(color="#58a6ff"),
+                    bgcolor="#161b22",
+                    borderwidth=1, bordercolor="#30363d",
                     steps=[
                         dict(range=[0, avg * 0.7], color="#1e3a5f"),
-                        dict(range=[avg * 0.7, avg * 1.3], color="#1a2234"),
-                        dict(range=[avg * 1.3, df["Price Per Liter (USD)"].max()], color="#001a1a"),
+                        dict(range=[avg * 0.7, avg * 1.3], color="#161b22"),
+                        dict(range=[avg * 1.3, df["Price Per Liter (USD)"].max()], color="#0d1117"),
                     ],
-                    threshold=dict(line=dict(color="#00ffff", width=2), thickness=0.75, value=avg)
+                    threshold=dict(line=dict(color="#58a6ff", width=2), thickness=0.75, value=avg)
                 )
             ))
             fig_gauge.update_layout(
@@ -787,20 +785,20 @@ elif page == "🔮 Live Predictor":
 
         else:
             st.markdown("""
-            <div style='background:#0f1628; border:1px dashed #1e2d4a; border-radius:20px; padding:3rem; text-align:center;'>
+            <div style='background:#161b22; border:1px dashed #30363d; border-radius:20px; padding:3rem; text-align:center;'>
                 <div style='font-size:3rem; margin-bottom:1rem;'>🔮</div>
-                <div style='color:#475569; font-size:0.95rem;'>Adjust the sliders on the left<br>and click <b style='color:#04ffffef;'>Predict Petrol Price</b></div>
+                <div style='color:#475569; font-size:0.95rem;'>Adjust the sliders on the left<br>and click <b style='color:#58a6ff;'>Predict Petrol Price</b></div>
             </div>
             """, unsafe_allow_html=True)
 
         # Model info reminder
         st.markdown("<br>", unsafe_allow_html=True)
         st.markdown(f"""
-        <div style='background:#111827; border:1px solid #1e2d4a; border-radius:12px; padding:1rem;'>
+        <div style='background:#21262d; border:1px solid #30363d; border-radius:12px; padding:1rem;'>
             <p style='font-size:0.72rem; color:#64748b; text-transform:uppercase; letter-spacing:1px; margin-bottom:0.5rem;'>Model Info</p>
             <p style='color:#94a3b8; font-size:0.82rem; margin:0.2rem 0;'>Algorithm: Linear Regression</p>
-            <p style='color:#94a3b8; font-size:0.82rem; margin:0.2rem 0;'>R² Score: <b style='color:#04ffffef;'>{metrics['r2']}</b></p>
-            <p style='color:#94a3b8; font-size:0.82rem; margin:0.2rem 0;'>MAE: <b style='color:#04ffffef;'>${metrics['mae']}</b></p>
+            <p style='color:#94a3b8; font-size:0.82rem; margin:0.2rem 0;'>R² Score: <b style='color:#58a6ff;'>{metrics['r2']}</b></p>
+            <p style='color:#94a3b8; font-size:0.82rem; margin:0.2rem 0;'>MAE: <b style='color:#58a6ff;'>${metrics['mae']}</b></p>
         </div>
         """, unsafe_allow_html=True)
 
