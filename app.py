@@ -219,9 +219,8 @@ st.markdown("""
 
 # ─── Load & Prepare Data ─────────────────────────────────────────────────────
 @st.cache_data
-def load_and_train(file_bytes):
-    import io
-    df = pd.read_excel(io.BytesIO(file_bytes))
+def load_and_train():
+    df = pd.read_excel("Petrol Dataset June 23 2022 -- Version 2.csv.xlsx")
     df.columns = df.columns.str.strip()
     df = df.fillna(df.mean(numeric_only=True))
 
@@ -247,40 +246,7 @@ def load_and_train(file_bytes):
     return df, model, X, X_train, X_test, y_train, y_test, y_pred, metrics
 
 
-# ─── File Upload Gate ─────────────────────────────────────────────────────────
-DATASET_FILENAME = "Petrol_Dataset_June_23_2022_--_Version_2_csv.xlsx"
-
-import os, io
-
-# Try loading from repo first, otherwise ask user to upload
-if os.path.exists(DATASET_FILENAME):
-    with open(DATASET_FILENAME, "rb") as f:
-        file_bytes = f.read()
-    df, model, X, X_train, X_test, y_train, y_test, y_pred, metrics = load_and_train(file_bytes)
-else:
-    st.markdown("""
-    <div style='text-align:center; padding: 4rem 2rem;'>
-        <div style='font-size:3rem;'>⛽</div>
-        <div style='font-family:Syne,sans-serif; font-size:2rem; font-weight:800;
-             background:linear-gradient(135deg,#f97316,#fbbf24);
-             -webkit-background-clip:text; -webkit-text-fill-color:transparent;
-             margin:1rem 0 0.5rem;'>PetrolIQ</div>
-        <div style='color:#64748b; margin-bottom:2rem;'>Upload the dataset to launch the app</div>
-    </div>
-    """, unsafe_allow_html=True)
-
-    uploaded = st.file_uploader(
-        "📂 Upload your Excel dataset",
-        type=["xlsx"],
-        help="Upload: Petrol_Dataset_June_23_2022_--_Version_2_csv.xlsx"
-    )
-
-    if uploaded is None:
-        st.info("👆 Please upload the Excel dataset file to continue.")
-        st.stop()
-
-    file_bytes = uploaded.read()
-    df, model, X, X_train, X_test, y_train, y_test, y_pred, metrics = load_and_train(file_bytes)
+df, model, X, X_train, X_test, y_train, y_test, y_pred, metrics = load_and_train()
 
 # ─── Sidebar ──────────────────────────────────────────────────────────────────
 with st.sidebar:
