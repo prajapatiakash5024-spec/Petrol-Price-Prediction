@@ -3,7 +3,7 @@
 A professional Streamlit web application that predicts global petrol prices using Linear Regression on a dataset of 181 countries (June 2022).
 
 ## 🚀 Live Demo
-> Deploy on [Streamlit Community Cloud](https://streamlit.io/cloud) — free & easy!
+Project link (https://petrol-price-prediction-8wch3uwugdbsf5wmaowxde.streamlit.app/)
 
 ---
 
